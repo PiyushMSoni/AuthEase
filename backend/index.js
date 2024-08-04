@@ -13,7 +13,7 @@ app.get('/ping', (req,res)=>{
 })
 app.use(bodyParser.json());
 app.use(cors());
-app.use('/auth',AuthRouter);
+app.use('/',AuthRouter);
 app.use('/products', ProductRouter);
 
 app.listen(PORT , ()=>{
