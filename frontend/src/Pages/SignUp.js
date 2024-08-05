@@ -18,7 +18,6 @@ function SignUp() {
         copySignupInfo[name] = value;
         setSignupInfo(copySignupInfo);
     }
-    console.log('Login Info -->', signupInfo);
     const handleSignup = async (e) => {
         e.preventDefault();
         const { name, email, password } = signupInfo;
@@ -27,14 +26,14 @@ function SignUp() {
             return handleError('Fields Cannot be Empty!');
         }
         try {
-            const url = 'http://localhost:8080/signup';
+            const url = "http://localhost:8080/signup";
             const response = await fetch(url , {
                 method:"POST",
                 headers:{
                     'Content-Type':'application/json'
                 },
                 body : JSON.stringify(signupInfo)
-            })
+            }); 
             const result = await response.json();
             const {success , message, error} = result;
             if(success){
@@ -56,7 +55,7 @@ function SignUp() {
     }
     return (
         <div className='container'>
-            <h1>Login</h1>
+            <h1>SignUp</h1>
             <form onSubmit={handleSignup}>
                 <div>
                     <label htmlFor='name'>Name </label>
