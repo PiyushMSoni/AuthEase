@@ -1,6 +1,6 @@
-# 🚀 **User Authentication Project**
+# 🚀 **AuthEase Project**
 
-Welcome to the **User Authentication Project**! This application offers a modern and secure authentication system with an elegant user interface. Dive in and explore how this project implements cutting-edge technologies for user management.
+Welcome to the **AuthEase Project**! This application offers a modern and secure authentication system with an elegant user interface. Dive in and explore how this project implements cutting-edge technologies for user management.
 
 ---
 
